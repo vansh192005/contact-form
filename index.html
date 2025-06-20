@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+
+  <title>Frontend Mentor | Contact form</title>
+</head>
+
+<body>
+  <div class="success">
+    <div class="sentMsg">
+      <img src="assets/images/icon-success-check.svg" alt=""> 
+      <p>Message Sent!</p>
+    </div>
+    <p id="thanks">Thanks for completing the form, we'll be in touch soon!</p>
+    
+  </div>
+  <form>
+    <h1>Contact Us</h1>
+
+    <div class="name-section">
+      <div class="firstName">
+        <label for="firstName">First Name *</label>
+        <input type="name" name="firstName" id="firstName"/>
+        <span></span>
+      </div>
+      <div class="lastName">
+        <label for="lastName">Last Name *</label>
+        <input type="name" name="lastName" id="lastName"/>
+        <span></span>
+      </div>
+    </div>
+
+    <div class="email-section">
+      <div class="email">
+        <label for="email">Email Address *</label>
+        <input type="text" id="email" />
+      </div>
+      <span></span>
+    </div>
+
+    <div class="query-section">
+      <label>Query Type *</label>
+      <div class="query-type">
+        <label class="radio-box">
+          <input type="radio" name="query" value="general" />
+          General Enquiry
+        </label>
+        <label class="radio-box">
+          <input type="radio" name="query" value="support" />
+          Support Request
+        </label>
+      </div>
+      <span></span>
+    </div>
+
+    <div class="message-section">
+      <div class="message">
+        <label for="message">Message *</label>
+        <!-- <input type="text" id="message" > -->
+        <textarea id="message" rows="3"></textarea>
+      </div>
+      <span></span>
+    </div>
+
+    <div class="validation-section">
+      <input type="checkbox" name="consent"> 
+      <label>I consent to being contacted by team</label><br>
+      <span></span>
+    </div>
+
+    <div class="submit-section">
+      <button type="submit" id="submit">Submit</button>
+    </div>
+  </form>
+
+  <div class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">Vansh Tewani</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
